@@ -2,6 +2,7 @@ const pm2 = require('pm2');
 const { exec } = require('child_process');
 const command = process.platform === 'win32' ? 'echo %USERNAME%' : 'whoami';
 const Watchlog_Url_Pm2 = "http://localhost:3774/pm2list"
+const fetch = require('node-fetch');
 
 function getUsername(callback) {
     const command = process.platform === 'win32' ? 'echo %USERNAME%' : 'whoami';
