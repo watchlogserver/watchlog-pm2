@@ -82,7 +82,7 @@ getUsername(async (error, username) => {
             }
 
 
-        }, 5 * 1000)
+        }, 10 * 1000)
 
 
     }
