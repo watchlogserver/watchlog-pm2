@@ -55,7 +55,7 @@ getUsername(async (error, username) => {
                         }));
 
 
-                        let pm2MetricsFilter = pm2Metrics.filter((item) => item.name !== "watchlog-pm2" )
+                        let pm2MetricsFilter = pm2Metrics.filter((item) => item.name !== "watchlog-pm2" || item.name !== "watchlog-agent" )
 
                         if (pm2MetricsFilter.length > 0) {
                             try {
